@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: translation-platform
+    env: node
+    buildCommand: npm install
+    startCommand: node index.js
+    envVars:
+      - key: MONGO_URI
+        value: mongodb+srv://ngoctnut1994:Ngoctnut1994@cluster0.axywqms.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      - key: NODE_ENV
+        value: production
